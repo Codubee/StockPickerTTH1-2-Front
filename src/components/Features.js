@@ -1,13 +1,16 @@
 import React from 'react';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
 function Features() 
 {
   return (
         <div>
-            <h3>These are the available features: </h3>
-            <li>Display Stock Info</li>
-            <li>Match with Potential Stocks</li>
-            <li>Stocks You've Matched With</li>
+            <h3>Available Features: </h3>
+            <ListGroup>
+                <ListGroupItem>Display Stock Info</ListGroupItem>
+                <ListGroupItem>Match with Potential Stocks</ListGroupItem>
+                <ListGroupItem>Stocks You've Matched With</ListGroupItem>
+            </ListGroup>
         </div>
     )
 }

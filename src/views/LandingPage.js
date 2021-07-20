@@ -5,7 +5,7 @@ function LandingPage()
 {
   return (
         <div>
-          <h1>Welcome</h1>
+          <h1>Hello world</h1>
         </div>
     )
 }

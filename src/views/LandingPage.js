@@ -1,11 +1,12 @@
 import React from 'react';
+import TeamComponent from '../components/TeamComponent'
 
 function LandingPage() 
 {
   return (
-        <div>
-            <h1>Hello world</h1>
-        </div>
+        <container>
+            <TeamComponent />
+        </container>
     )
 }
 

@@ -4,9 +4,9 @@ import TeamComponent from '../components/TeamComponent'
 function LandingPage() 
 {
   return (
-        <container>
-            <TeamComponent />
-        </container>
+        <div>
+        <TeamComponent />
+        </div>
     )
 }
 

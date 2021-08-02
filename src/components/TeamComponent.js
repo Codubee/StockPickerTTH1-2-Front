@@ -19,7 +19,7 @@ const people = [
   { name: 'Sophie Hoang', picture: 'http://placekitten.com/400/400', year: 'Sophomore', major: 'Computer Science', linkedIn: 'https://www.linkedin.com/in/sophie-hoang-09745b210/', gitHub: 'https://github.com/sophie-th' },
   { name: 'Sameed Bhatti', picture: 'http://placekitten.com/500/500', year: 'Junior', major: 'Computer Science', linkedIn: 'https://www.linkedin.com/in/sameed-bhatti-8810901b5/', gitHub: 'https://github.com/SameedB' },
 
-]
+] 
 
 //This is the actual component.
 

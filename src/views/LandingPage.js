@@ -1,11 +1,11 @@
 import React from 'react';
 import Features from '../components/Features';
+//import Description from '../components/Description';
 
 function LandingPage() 
 {
   return (
         <div>
-            <h1>Hello world</h1>
             <Features />
         </div>
     )

@@ -1,9 +1,12 @@
 import React from 'react'
+import Description from '../components/Description'
 
 function Match (){
   return(
     // Remove the hello world from here and place your components
-    <h1>Hello world</h1>  
+     <Container>
+        <Description/>
+      </Container>
   )
 }
 

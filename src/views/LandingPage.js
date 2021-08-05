@@ -1,4 +1,5 @@
 import React from 'react';
+import Tools from '../components/Tools';
 import TeamComponent from '../components/TeamComponent'
 import Features from '../components/Features';
 import Explanation from '../components/Explanation';
@@ -10,8 +11,9 @@ function LandingPage()
   return (
         <Container>
             <Explanation/>
-            <TeamComponent />        
+            <Tools/>
             <Features/>
+            <TeamComponent /> 
         </Container>
     )
 }

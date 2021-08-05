@@ -7,7 +7,7 @@ function App() {
     <div>
       <NavigationBar />
       <LandingPage/>
-    </div>
+      </div>
   );
 }
 

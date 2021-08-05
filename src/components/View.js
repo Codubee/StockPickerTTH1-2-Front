@@ -3,7 +3,7 @@ import {
     Card, CardImg, CardBody, CardTitle
 } from 'reactstrap';
 
-const View =(props) => {
+function View(props) {
   return (
     <Card>
     

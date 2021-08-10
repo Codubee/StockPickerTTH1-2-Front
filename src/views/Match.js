@@ -1,4 +1,5 @@
 import React from 'react'
+import Description from '../components/Description'
 
 import { Container } from 'reactstrap';
 import View from '../components/View';
@@ -12,7 +13,8 @@ function Match (){
 
     <Container>
       <View/> 
-    <Matches/>
+      <Description/>
+      <Matches/>
     </Container>  
     
   )

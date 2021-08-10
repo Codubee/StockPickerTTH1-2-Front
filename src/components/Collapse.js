@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
-
+//This is the function that will be producing the toggle
 function CollapseComponent(params) {
 
 const [isOpen, setIsOpen] = useState(false);

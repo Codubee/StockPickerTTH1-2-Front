@@ -4,7 +4,7 @@ import React from 'react';
 
 import {
   Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle, Row, Col, Button,
+  CardTitle, CardSubtitle, Row, Col,
 } from 'reactstrap';
 
 // This section of the code represents the information designated for each team member that sent me information about themselves

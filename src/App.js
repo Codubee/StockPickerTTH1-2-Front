@@ -17,11 +17,10 @@ function App() {
       <NavigationBar />
       <Router>
         <Switch>
-          <Route exact path="/Home">
+          <Route exact path="/">
             <LandingPage/>
           </Route>
-        
-          <Route path="/Match">
+          <Route path="/match">
             <MatchPage />
           </Route>
         </Switch>

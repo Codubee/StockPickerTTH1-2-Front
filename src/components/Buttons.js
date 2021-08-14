@@ -5,8 +5,8 @@ class Buttons extends React.Component {
     render() {
         return (
             <div>
-                <button color="success">Yes</button>
-                <button color="danger">No</button>
+                <Button color="success">Yes</Button>
+                <Button color="danger">No</Button>
             </div>
         )
     }

@@ -1,14 +1,11 @@
-
-
-
 import React from 'react';
 import { ListGroup, ListGroupItem, ListGroupItemText,  Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle,} from 'reactstrap';
-import "./Tools.css";
 import jiraimg from '../images/jira.png';
 import nodejs from '../images/node.png';
 import reactimg from '../images/react.png';
 import postmanimg from '../images/postman.png';
+import "../styles/Tools.css";
 
 
 function Tools() 

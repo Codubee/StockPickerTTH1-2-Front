@@ -1,10 +1,9 @@
 import React from 'react'
 import Description from '../components/Description'
-
 import { Container } from 'reactstrap';
 import View from '../components/View';
-
 import Matches from '../components/Matches'
+import CollapseComponent from '../components/CollapseComponent'
 
 
 class Match extends React.Component{
@@ -19,10 +18,10 @@ class Match extends React.Component{
     return(
       // Remove the hello world from here and place your components
   
-      <Container>
+      <Container className="text-center">
         <View/> 
         <Description/>
-        <Matches/>
+        <CollapseComponent/>
       </Container>  
       
     )

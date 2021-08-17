@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-    Card, CardImg, CardBody, CardTitle
-} from 'reactstrap';
-
+import '../styles/View.css'
 function View(props) {
   return (
-    <Card>
-    
-    <CardBody>
-          <CardTitle tag="h5">Stock Name</CardTitle>
-          <CardImg top width="100%" src={props.image} alt="Stock image" />
-        </CardBody>
-     </Card>
-      );
+    <div>
+          <img  className="image" src={props.image} alt="company" />
+    </div>
+  );
 }
 
 export default View;

@@ -9,7 +9,7 @@ function View(props) {
     
     <CardBody>
           <CardTitle tag="h5">Stock Name</CardTitle>
-          <CardImg top width="100%" src="https://picsum.photos/900" alt="Stock image" />
+          <CardImg top width="100%" src={props.image} alt="Stock image" />
         </CardBody>
      </Card>
       );

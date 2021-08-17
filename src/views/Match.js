@@ -32,11 +32,8 @@ class Match extends React.Component{
               this.setState({
                   
                   // Response.data has the data that came back from the GET http request
-                  companyName: response.data.companyName,
-                  symbol: response.data.symbol,
+                  companyData: response.data,
                   image: response.data.image,
-                  stockId: response.data.stockId,
-                  currentPrice: response.data.currentPrice
               })
           })
   }
@@ -47,19 +44,10 @@ class Match extends React.Component{
       // Remove the hello world from here and place your components
       <div>
         <Container>
-          <View/> 
-          <Description/>
+          <View image={this.state.image}/> 
+          <Description companyData={this.state.companyData}/>
           <Matches/>
         </Container>  
-      
-        <div>
-          <h3>Data for your stock matches: </h3>
-          <p>Company Name: {this.state.companyName}</p>
-          <p>Symbol: {this.state.symbol}</p>
-          <p>Image: {this.state.image}</p>
-          <p>Stock ID: {this.state.stockId}</p>
-          <p>Current Price: {this.state.currentPrice}</p>
-        </div>
       </div>
 
     )

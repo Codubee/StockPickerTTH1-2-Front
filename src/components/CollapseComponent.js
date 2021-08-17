@@ -3,20 +3,26 @@ import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import Matches from './Matches';
 
 //This is the function that will be producing the toggle
-function CollapseComponent(params) {
+class CollapseComponent extends React.Component{
+   constructor(props){
+    super(props)
+    this.state = {isOpen:false}
+    this.setIsOpen = this.setIsOpen.bind(this)
+  }
+  setIsOpen(){
+    this.setState({isOpen:!this.state.isOpen})
+  }
 
-const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <div>
-      <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
-      <Collapse isOpen={isOpen}>
-        <Matches/>
-      </Collapse>
-    </div>
-  );
+  render() {
+    return (
+      <div className="text-center">
+        <Button color="primary" onClick={this.setIsOpen} style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Collapse isOpen={this.state.isOpen}>
+          <Matches/>
+        </Collapse>
+      </div>
+    );
+  }
 }
 
 export default CollapseComponent;

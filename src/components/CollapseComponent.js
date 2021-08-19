@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import React from 'react';
+import { Collapse, Button } from 'reactstrap';
 import Matches from './Matches';
 
 //This is the function that will be producing the toggle

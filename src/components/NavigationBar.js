@@ -7,7 +7,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-  } from 'reactstrap';
+  NavbarText,
+} from 'reactstrap';
+import Weather from './Weather';
 
 const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,8 @@ const NavigationBar = (props) => {
               <NavLink href="/match">Match</NavLink>
             </NavItem>
           </Nav>
-            </Collapse>
+          <NavbarText><Weather/></NavbarText>
+        </Collapse>
       </Navbar>
     </div>
   );

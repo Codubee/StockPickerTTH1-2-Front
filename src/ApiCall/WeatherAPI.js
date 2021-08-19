@@ -19,9 +19,9 @@ class WeatherAPI extends React.Component {
     render() {
         return (
             <div>
-                <p>Push the button to get weather</p>
+                <p>Press button to call Weather API</p>
 
-                <button onClick={this.triggerApi}>Submit</button>
+                <button onClick={this.triggerApi}>Get Weather!</button>
                 <h3>Expected Temp: {this.state.temp}</h3>
             </div>
 

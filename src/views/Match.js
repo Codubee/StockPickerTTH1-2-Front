@@ -1,10 +1,9 @@
 import React from 'react'
 import Description from '../components/Description'
-import { Container } from 'reactstrap';
+import { Container,Button } from 'reactstrap';
 import View from '../components/View';
 import Matches from '../components/Matches'
 import CollapseComponent from '../components/CollapseComponent'
-import Buttons from '../components/Buttons'
 
 class Match extends React.Component{
 

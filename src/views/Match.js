@@ -10,7 +10,16 @@ class Match extends React.Component{
 
   constructor(props){
     super(props)
+    this.state = { company: "Apple" }
+    this.clickedYes = this.clickedYes.bind(this)
+    this.clickedNo = this.clickedNo.bind(this)
+  }
 
+  clickedYes() {
+    this.setState({ company: "World" })
+  }
+  clickedNo() {
+    this.setState({ company: "World" })
   }
 
   render(){
@@ -21,7 +30,8 @@ class Match extends React.Component{
       <Container className="text-center">
         <View/> 
         <Description/>
-        <Buttons/>
+        <Button color="success" onClick={this.clickedYes}>Yes</Button>
+        <Button color="danger" onClick={this.clickedNo}>No</Button>
         <CollapseComponent/>
       </Container>  
       

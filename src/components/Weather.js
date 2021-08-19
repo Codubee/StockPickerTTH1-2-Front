@@ -1,13 +1,13 @@
 import React from 'react';
 import axios from 'axios'
 
-class WeatherAPI extends React.Component {
+class Weather extends React.Component {
     constructor(props) {
         super(props);
         this.state = { temp: '' };
-        this.triggerApi = this.triggerApi.bind(this);
     }
-    triggerApi() {
+
+    componentDidMount() {
         axios.get("https://stockpicker-tth12-1-back.herokuapp.com/getWeather")
             .then((response) => {
                 console.log(response.data);
@@ -19,14 +19,11 @@ class WeatherAPI extends React.Component {
     render() {
         return (
             <div>
-                <p>Press button to call Weather API</p>
-
-                <button onClick={this.triggerApi}>Get Weather!</button>
-                <h3>Expected Temp: {this.state.temp}</h3>
+                <h3>Temp: {this.state.temp}</h3>
             </div>
 
         )
     }
 }
 
-export default WeatherAPI;
+export default Weather;

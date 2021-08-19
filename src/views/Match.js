@@ -21,7 +21,7 @@ class Match extends React.Component{
   clickedNo() {
     this.setState({ company: "World" })
 
-
+  }
 
   componentDidMount() {
 

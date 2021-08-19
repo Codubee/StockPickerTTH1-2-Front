@@ -10,7 +10,6 @@ class Weather extends React.Component {
     componentDidMount() {
         axios.get("https://stockpicker-tth12-1-back.herokuapp.com/getWeather")
             .then((response) => {
-                console.log(response.data);
                 this.setState({
                     temp: response.data.Temp
                 })

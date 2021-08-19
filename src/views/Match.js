@@ -60,7 +60,7 @@ class Match extends React.Component{
       <Container className="text-center">
         <Description companyData={this.state.companyData}/>
         <Button color="success" onClick={this.clickedYes}>Buy</Button>
-        <Button color="danger" onClick={this.clickedNo}>Hold</Button>
+        <Button color="danger" onClick={this.clickedNo}>Sell</Button>
         <CollapseComponent userId={this.state.userId}/>
       </Container>  
       

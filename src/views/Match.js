@@ -1,17 +1,26 @@
 import React from 'react'
 import Description from '../components/Description'
-import { Container } from 'reactstrap';
+import { Container,Button } from 'reactstrap';
 import View from '../components/View';
 import axios from 'axios'
 import CollapseComponent from '../components/CollapseComponent'
 
-
 class Match extends React.Component{
 
-  constructor(props) {
-    super(props);
-    // Creating a state object with empty values
-    this.state = { companyName: "", symbol: "", image: "", stockId: "", currentPrice: "" };
+
+  constructor(props){
+    super(props)
+    this.state = { companyData: "",image:"" }
+    this.clickedYes = this.clickedYes.bind(this)
+    this.clickedNo = this.clickedNo.bind(this)
+  }
+
+  clickedYes() {
+    this.setState({ company: "World" })
+  }
+  clickedNo() {
+    this.setState({ company: "World" })
+
   }
 
   componentDidMount() {
@@ -33,6 +42,7 @@ class Match extends React.Component{
                 image: response.data.Data.image,
             })
         })
+
   }
 
   render(){
@@ -41,8 +51,12 @@ class Match extends React.Component{
       // Remove the hello world from here and place your components
   
       <Container className="text-center">
+        <Description/>
         <View image={this.state.image}/>
         <Description companyData={this.state.companyData}/>
+        <Button color="success" onClick={this.clickedYes}>Yes</Button>
+        <Button color="danger" onClick={this.clickedNo}>No</Button>
+
         <CollapseComponent/>
       </Container>  
       

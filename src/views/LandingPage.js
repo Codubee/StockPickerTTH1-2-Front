@@ -3,21 +3,19 @@ import Tools from '../components/Tools';
 import TeamComponent from '../components/TeamComponent'
 import Features from '../components/Features';
 import Explanation from '../components/Explanation';
-import {Container} from 'reactstrap'
-import WeatherAPI from '../ApiCall/WeatherAPI';
+import { Container } from 'reactstrap'
 
-class LandingPage extends React.Component 
-{
-    render() {
-        return (
-            <Container>
-                <WeatherAPI/>
-            </Container>
-        )
-    }
+function LandingPage() {
+
+    return (
+        <Container>
+            <Explanation />
+            <Tools />
+            <Features />
+            <TeamComponent />
+        </Container>
+    )
+
 }
-/*<Explanation/>
- <Tools/>
-<Features/>
-<TeamComponent />*/
+
 export default LandingPage;

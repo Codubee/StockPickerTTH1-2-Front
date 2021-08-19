@@ -1,18 +1,17 @@
 import React from 'react'
 import { Table } from 'reactstrap'
-
+import axios from 'axios'
 class Matches extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = { Matches: {} };
-        this.deleteApi = this.deleteApi.bind(this);
+        this.triggerDeleteApi = this.triggerDeleteApi.bind(this);
     }
 
-    triggerDeleteApi(){
+    triggerDeleteApi(stockId){
 
-         var queryParam = 1;
-         axios.delete("https://stockpicker-tth12-1-back.herokuapp.com/deleteStock?userId=99&stockId=1"+queryParam)
+         axios.delete("https://stockpicker-tth12-1-back.herokuapp.com/deleteStock?userId="+this.props.userId+"&stockId="+stockId)
 
          .then((response) => {
              console.log(response.data);

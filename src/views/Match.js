@@ -1,7 +1,6 @@
 import React from 'react'
 import Description from '../components/Description'
 import { Container,Button } from 'reactstrap';
-import View from '../components/View';
 import axios from 'axios'
 import CollapseComponent from '../components/CollapseComponent'
 
@@ -58,9 +57,16 @@ class Match extends React.Component{
       // Remove the hello world from here and place your components
   
       <Container className="text-center">
+        <br></br>
+        <br></br>
         <Description companyData={this.state.companyData}/>
-        <Button color="success" onClick={this.clickedYes}>Buy</Button>
-        <Button color="danger" onClick={this.clickedNo}>Sell</Button>
+        <div>
+          <br></br>
+          <Button color="danger" onClick={this.clickedNo} >Sell</Button>
+          <Button color="success" onClick={this.clickedYes} style={{marginLeft:"5px"}}>Buy</Button>
+          <br></br>
+          <br></br>
+        </div>
         <CollapseComponent userId={this.state.userId}/>
       </Container>  
       

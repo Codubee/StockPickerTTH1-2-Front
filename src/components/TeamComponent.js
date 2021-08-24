@@ -12,7 +12,7 @@ import {
 const people = [
   { name: 'Daniel Jaramillo-Alejo', picture: 'http://placekitten.com/200/200', year: 'Junior', major: 'Computer Engineering', linkedIn: 'https://www.linkedin.com/in/danieljaramilloalejo/', gitHub: 'https://github.com/Daani1' },
   { name: 'Jonathan Arsola', picture: 'http://placekitten.com/700/700', year: 'Senior', major: 'N/A', linkedIn: 'https://www.linkedin.com/in/jonathan-arsola/', gitHub: 'https://github.com/arsoljon' },
-  { name: 'Jazmine Fuentes', picture: 'http://placekitten.com/900/900', year: 'Senior', major: 'Biomedical Engineering', linkedIn: 'https://www.linkedin.com/in/jazmine-fuentes/', gitHub: 'https://github.com/jazfv' },
+  { name: 'Jazmine Fuentes', picture: 'http://placekitten.com/900/900', year: 'Senior', major: 'Biomed Engineer', linkedIn: 'https://www.linkedin.com/in/jazmine-fuentes/', gitHub: 'https://github.com/jazfv' },
   { name: 'Jorge Cancino', picture: 'http://placekitten.com/650/650', year: 'Senior', major: 'Computer Science', linkedIn: 'https://www.linkedin.com/in/jorge-cancino-20b608146/', gitHub: 'https://github.com/jorgecan101' },
   { name: 'Neha Sapre', picture: 'http://placekitten.com/800/800', year: 'Sophomore', major: 'Computer Science', linkedIn: 'https://www.linkedin.com/in/neha2114/', gitHub: 'https://github.com/nehasapre' },
   { name: 'Gabriel Lasut', picture: 'http://placekitten.com/750/750', year: 'Junior', major: 'Computer Science', linkedIn: 'https://www.linkedin.com/in/gabriel-lasut-96177a1a8/', gitHub: 'https://github.com/GabeL-code' },
@@ -31,10 +31,13 @@ const people = [
 function TeamComponent(params) {
   return (
     <div>
+      <h2 className="text-center">Team</h2>
+            <br></br>
+            <br></br>
       <Row>
         {
           people.map((student, id) => (
-            <Col sm='3' key={id}>
+            <Col sm='4' key={id}>
               <Card body inverse style={{ backgroundColor: '#333' }}>
                 <CardImg top width="100%" src={student.picture} alt="Card image cap" />
                 <CardBody>

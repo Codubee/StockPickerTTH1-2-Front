@@ -29,6 +29,12 @@ const NavigationBar = (props) => {
             <NavItem>
               <NavLink href="/match">Match</NavLink>
             </NavItem>
+            <NavItem>
+                <NavLink href="https://github.com/Codubee/StockPickerTTH1-2-Front" target="_blank"><h5 className="github-link">FrontEndGitHub</h5></NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="https://github.com/Codubee/StockPickerTTH12-1-Back" target="_blank"><h5 className="github-link">BackEndGitHub</h5></NavLink>
+              </NavItem>
           </Nav>
           <NavbarText><Weather/></NavbarText>
         </Collapse>
